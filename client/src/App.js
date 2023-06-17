@@ -3,47 +3,47 @@ import { useEffect, useState } from "react";
 
 import { URL_SERVER } from "./api/config";
 import { UserListRow } from "./components/userListRow";
+import { NavBar } from "./components/navigationBar/navBar";
 import getUsers from './api/getUsers.js';
 
 function App() {
   const [ users, setUsers ] = useState([]);
   useEffect(() => {
-
-    // const data = fetch(`${URL_SERVER}/users`, {
-    //   method: "GET",
-    // })
-    // .then((response) => response.json());
-    getUsers().then((response) => {
-      console.log(response);
-      setUsers(response.users);
-    });
-    // console.log(data);
-    // setUsers(data);
-
+    getUsers().then(response => setUsers(response.users));
   }, []);
-  // console.log(users);
-  console.log(users[0]?.id);
 
   return (
-    <div className="App">
-      <div style={{ overflowX: "auto" }}>
-        <table id="articles" className="table">
-          <thead>
-            <tr>
-              <th style={{ width: "10%" }}>Id</th>
-              <th style={{ width: "20%" }}>Imię</th>
-              <th style={{ width: "20%" }}>Nazwisko</th>
-              <th style={{ width: "10%" }}></th>
-            </tr>
-          </thead>
-          <tbody>
-            {users.map((user) => 
-                    <UserListRow user={user}/>
-                  )}
-          </tbody>
-        </table>
+    <>
+      <NavBar/>
+      <div className="App content jumbotron justify-center mt-4 mx-4 bg-dark mb-0 text-white">
+        <div className="row pb-4 mt-0">
+          <div className="h1 col-md">
+                  Użytkownicy
+          </div>
+          <div className="col-md">
+                  <a href="" className="btn btn-primary pull-right">Wyświetl aktywnych
+                      użytkowników</a>
+          </div>
+        </div>
+        <div style={{ overflowX: "auto" }}>
+          <table id="articles" className="table">
+            <thead>
+              <tr>
+                <th style={{ width: "10%" }}>Id</th>
+                <th style={{ width: "20%" }}>Imię</th>
+                <th style={{ width: "20%" }}>Nazwisko</th>
+                <th style={{ width: "10%" }}></th>
+              </tr>
+            </thead>
+            <tbody>
+              {users.map((user) => 
+                <UserListRow key={user.id} user={user}/>
+              )}
+            </tbody>
+          </table>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

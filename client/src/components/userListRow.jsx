@@ -1,6 +1,6 @@
 
 export const UserListRow = ({user}) => {
-    console.log(user);
+    // console.log(user);
     return (
         <tr>
             <td>{user.id}</td>

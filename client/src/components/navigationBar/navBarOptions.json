@@ -1,0 +1,79 @@
+{
+  "navButtons": [
+    {
+      "key": "workers",
+      "button": "Pracownicy",
+      "dropdownButtons": [
+        { "button": "Wyświetl listę pracowników" },
+        { "button": "Dodaj nowego pracownika" }
+      ]
+    },
+    {
+      "key": "users",
+      "button": "Użytkownicy",
+      "dropdownButtons": [{ "button": "Wyświetl listę użytkowników" }]
+    },
+    {
+      "key": "tickets",
+      "button": "Bilety",
+      "dropdownButtons": [
+        { "button": "Wyświetl pule biletów" },
+        { "button": "Dodaj nową pulę biletów" },
+        { "button": "Zarządzaj rodzajami biletów" }
+      ]
+    },
+    {
+      "key": "rooms",
+      "button": "Sale",
+      "dropdownButtons": [
+        { "button": "Wyświetl listę sal" },
+        { "button": "Dodaj nową salę" }
+      ]
+    },
+    {
+      "key": "program",
+      "button": "Repertuar",
+      "dropdownButtons": [
+        { "button": "Wyświetl listę filmów" },
+        { "button": "Pokaż seanse wg daty" },
+        { "button": "Pokaż repertuar wg sal" },
+        { "button": "Dodaj nowy film" },
+        { "button": "Dodaj nowy seans" }
+      ]
+    },
+    {
+      "key": "promotions",
+      "button": "Promocje",
+      "dropdownButtons": [
+        { "button": "Wyświetl aktywne promocje" },
+        { "button": "Dodaj nową promocję" },
+        { "button": "Przeglądaj vouchery" }
+      ]
+    },
+    {
+      "key": "sales",
+      "button": "Sprzedaż",
+      "dropdownButtons": [
+        { "button": "Wyświetl listę rezerwacji" },
+        { "button": "Przyjmij zwrot biletów" },
+        { "button": "Weryfikuj bilety" }
+      ]
+    },
+    {
+      "key": "reports",
+      "button": "Raporty",
+      "dropdownButtons": [
+        { "button": "Wygeneruj raport sprzedaży" },
+        { "button": "Wygeneruj raport seansów odwołanych" }
+      ]
+    },
+    {
+      "key": "dictionaries",
+      "button": "Słowniki",
+      "dropdownButtons": [
+        { "button": "Słowniki" },
+        { "button": "Wyświetl listę słowników" }
+      ]
+    }
+  ]
+}
