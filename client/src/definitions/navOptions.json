@@ -1,0 +1,79 @@
+{
+  "navOptions": [
+    {
+      "key": "employees",
+      "category": "Pracownicy",
+      "options": [
+        { "option": "Wyświetl listę pracowników" , "route": "/"},
+        { "option": "Dodaj nowego pracownika" , "route": "/"}
+      ]
+    },
+    {
+      "key": "users",
+      "category": "Użytkownicy",
+      "options": [{ "option": "Wyświetl listę użytkowników" , "route": "/users"}]
+    },
+    {
+      "key": "tickets",
+      "category": "Bilety",
+      "options": [
+        { "option": "Wyświetl pule biletów" , "route": "/"},
+        { "option": "Dodaj nową pulę biletów" , "route": "/"},
+        { "option": "Zarządzaj rodzajami biletów" , "route": "/"}
+      ]
+    },
+    {
+      "key": "rooms",
+      "category": "Sale",
+      "options": [
+        { "option": "Wyświetl listę sal" , "route": "/"},
+        { "option": "Dodaj nową salę" , "route": "/"}
+      ]
+    },
+    {
+      "key": "program",
+      "category": "Repertuar",
+      "options": [
+        { "option": "Wyświetl listę filmów" , "route": "/"},
+        { "option": "Pokaż seanse wg daty" , "route": "/"},
+        { "option": "Pokaż repertuar wg sal" , "route": "/"},
+        { "option": "Dodaj nowy film" , "route": "/"},
+        { "option": "Dodaj nowy seans" , "route": "/"}
+      ]
+    },
+    {
+      "key": "promotions",
+      "category": "Promocje",
+      "options": [
+        { "option": "Wyświetl aktywne promocje" , "route": "/"},
+        { "option": "Dodaj nową promocję" , "route": "/"},
+        { "option": "Przeglądaj vouchery" , "route": "/"}
+      ]
+    },
+    {
+      "key": "sales",
+      "category": "Sprzedaż",
+      "options": [
+        { "option": "Wyświetl listę rezerwacji" , "route": "/"},
+        { "option": "Przyjmij zwrot biletów" , "route": "/"},
+        { "option": "Weryfikuj bilety" , "route": "/"}
+      ]
+    },
+    {
+      "key": "reports",
+      "category": "Raporty",
+      "options": [
+        { "option": "Wygeneruj raport sprzedaży" , "route": "/"},
+        { "option": "Wygeneruj raport seansów odwołanych" , "route": "/"}
+      ]
+    },
+    {
+      "key": "dictionaries",
+      "category": "Słowniki",
+      "options": [
+        { "option": "Słowniki" , "route": "/"},
+        { "option": "Wyświetl listę słowników" , "route": "/"}
+      ]
+    }
+  ]
+}

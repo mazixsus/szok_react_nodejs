@@ -1,12 +1,12 @@
 import { NavButton } from "./navButton";
-import navOptions from "./navBarOptions.json";
+import navBarOptions from "../../definitions/navOptions.json";
 
 export const NavBar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
                 <div className="navbar-header">
-                    <a className="navbar-brand" href="{{ path('workers_app/main_page') }}"><i className="fa fa-home"
+                    <a className="navbar-brand" href="/"><i className="fa fa-home"
                                                                                         aria-hidden="true"></i> SZOK</a>
                 </div>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
@@ -16,7 +16,7 @@ export const NavBar = () => {
                 <div className="collapse navbar-collapse" id="navbar">
                     <ul className="nav navbar-nav ml-auto">
                         {
-                            navOptions.navButtons.map((navButton, i) => 
+                            navBarOptions.navOptions.map((navButton, i) => 
                                 <NavButton key={"navButton"+i} navButton = {navButton}/>
                             ) 
                         }
